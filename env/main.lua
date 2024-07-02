@@ -16,5 +16,5 @@ getgenv().mousemoverel = function(x, y)
 end
 
 getgenv().mousemoveabs = function(x, y)
-    mousemove("mousemoverel", x, y);
+    mousemove("mousemoveabs", x, y);
 end
