@@ -7,14 +7,14 @@ local mousemove = function(type, x, y)
         Body = game:GetService("HttpService"):JSONEncode({
             x, y
         }),
-        Url = `http://localhost:8080/{type}`
+        Url = `http://localhost:8080/mousemove{type}`
     });
 end
 
 getgenv().mousemoverel = function(x, y)
-    mousemove("mousemoverel", x, y);
+    mousemove("rel", x, y);
 end
 
 getgenv().mousemoveabs = function(x, y)
-    mousemove("mousemoveabs", x, y);
+    mousemove("abs", x, y);
 end
